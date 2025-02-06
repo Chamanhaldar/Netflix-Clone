@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+}
+.m-section{
+    position: relative; /*Allows us to position the overlay correctly */
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./Heroimg.jpg);
+    background-size: cover;
+}
+.m-section::after{
+    content: ""; /*This makes the pseudo element appear*/
+    position: absolute; /*Positions it inside .m-section*/
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.75); /*Adds a dark shade*/
+    z-index: 1;
+    pointer-events: none;
+}
+.nav{
+    position: relative;
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    z-index: 2;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    image-rendering: crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+}
+.heading{
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+    z-index: 3;
+    padding-top: 4.5rem;
+}
+.heading h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.heading h4{
+    padding-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.heading h5{
+    margin-top: 1.5rem;
+    padding-top: 1.3rem;
+    font-size: 1.1rem;
+    font-weight: 370;
+}
+.email{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 4;
+    height: 25vh;
+    width: 100%;
+    gap: .5rem;
+}
+.email input{
+    border-radius: 0.3rem;
+    border-color: white;
+    font-weight: 600;
+    width: 25rem;
+    font-size: 1rem;
+    padding: 1rem 0.5rem 1rem 0.8rem;
+    background-color: #232323;
+    opacity: 0.8;
+    color: white;
+}
+.email button{
+    position: relative;
+    z-index: 5;
+    height: 3.5rem;
+    background-color: red;
+    color: white;
+    font-size: 1.5rem;
+    width: 15rem;
+    border-radius: 0.3rem;
+    border-color: red;
+}
+.logo img{
+    margin-top: 0.3rem;
+    width: 12.6rem;
+    height: 5.5rem;
+}
+.logo{
+    width: 50%;
+    padding-left: 8rem;
+}
+.side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+button i{
+    color: white;
+}
+.lng-btn{
+    font-size: 1rem;
+    padding: 0.5rem 2rem 0.5rem 1.8rem;
+    border-radius: 0.3rem;
+    border-color: white;
+    background-color: #232323;
+    color: white;
+}
+.sgn-btn{
+    font-size: 1rem;
+    background-color: red;
+    color: white;
+    border-radius: 0.3rem;
+    padding: 0.5rem 2rem 0.5rem 1.8rem;
+    border-color: red;
+
+}
+.sign-in{
+    margin-left: 1rem;
+}
